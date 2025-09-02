@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎨 Picstory: 마법 같은 이야기 만들기 📖</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+    <div id="book">
+        <div class="page left-page active">
+            <header>
+                <h1 class="main-title">
+                    <span>🎨</span> Picstory: 마법 같은 이야기 만들기 <span>📖</span>
+                </h1>
+                <p>당신의 사진으로 마법 같은 이야기를 만들어 보세요.</p>
+            </header>
+            <main class="initial-page-content">
+                <img src="../static/images/cover.png" alt="책 표지 이미지" class="cover-image">
+                <form id="upload-form" enctype="multipart/form-data">
+                    <label for="file-input" class="custom-file-upload">
+                        사진을 선택해서 마법을 시작해 보세요 ✨
+                    </label>
+                    <input type="file" name="file" id="file-input" required accept="image/*">
+                    <button type="submit">이야기 만들기!</button>
+                </form>
+            </main>
+        </div>
+        
+        <div class="page right-page active">
+            <p class="initial-right-text">첫 페이지입니다. 다음 페이지를 기대해 주세요!</p>
+        </div>
+    </div>
+    
+    <div class="navigation-buttons">
+        <button id="prev-btn" disabled>이전</button>
+        <button id="next-btn" disabled>다음</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../static/javascript/index.js"></script>
+</body>
+</html>
