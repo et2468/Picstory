@@ -42,5 +42,5 @@ Picstory, 나만의 사진으로 이야기를 만들어보세요.
 
 sering: flask
 
-model: vgg16 ([tunning 노트 정리](training/training 노트정리))
+model: vgg16 ([tunning 노트 정리](./training/training%20노트정리.md))
 
